@@ -13,7 +13,7 @@ if (!isset($_SESSION["username"])) {
 <head>
     <title>Minichat</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header>Minichat PHP</header>
