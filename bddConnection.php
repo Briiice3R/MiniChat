@@ -1,6 +1,7 @@
 <?php
+require_once "global.php";
 try{
-    $bdd = new PDO("mysql:host=".apache_getenv("HOST").";dbname=".apache_getenv("DBNAME").",".apache_getenv("LOGIN"), apache_getenv("PASSWORD"));
+    $bdd = new PDO("mysql:host=".$HOST.";dbname=".$DBNAME, $LOGIN, $PASSWORD);
 } catch(\Exception $e){
     die("Message d'erreur : " . $e->getMessage());
 }
