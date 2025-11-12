@@ -1,0 +1,117 @@
+body {
+    font-family: 'sans-serif', Arial, sans-serif;
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    width: 100vw;
+    text-align: center;
+    font-size: 2.5em;
+    color: #2d3a4b;
+    margin: 40px 0 24px 0;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 8px #e0eafc;
+}
+.chat-container {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    width: 100%;
+    max-width: 430px;
+    display: flex;
+    flex-direction: column;
+    padding: 28px 20px 20px 20px;
+    margin-bottom: 40px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+label {
+    font-weight: 600;
+    color: #4a5a6a;
+    margin-bottom: 2px;
+}
+input, textarea {
+    border: 1px solid #d1d9e6;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1em;
+    background: #f7fafd;
+    transition: border 0.2s;
+}
+input:focus, textarea:focus {
+    border: 1.5px solid #7abaff;
+    outline: none;
+}
+textarea {
+    resize: vertical;
+    min-height: 60px;
+    max-height: 120px;
+}
+button {
+    background: linear-gradient(90deg, #4f8cff 0%, #38d39f 100%);
+    color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 0;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(80, 120, 200, 0.08);
+}
+button:hover {
+    background: linear-gradient(90deg, #38d39f 0%, #4f8cff 100%);
+}
+.messages {
+    background: #f4f8fb;
+    border-radius: 12px;
+    padding: 14px;
+    height: 230px;
+    overflow-y: auto;
+    margin-bottom: 8px;
+    box-shadow: 0 2px 8px rgba(80, 120, 200, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.message {
+    background: #eaf6ff;
+    border-radius: 9px;
+    padding: 9px 13px;
+    border-left: 4px solid #4f8cff;
+    word-break: break-word;
+    box-shadow: 0 1px 4px rgba(80, 120, 200, 0.04);
+}
+.message strong {
+    color: #2d3a4b;
+    font-size: 1em;
+}
+.timestamp {
+    font-size: 0.85em;
+    color: #7a8fa6;
+    margin-bottom: 2px;
+    display: block;
+}
+@media (max-width: 500px) {
+    header {
+        font-size: 1.5em;
+        margin: 20px 0 14px 0;
+    }
+    .chat-container {
+        max-width: 98vw;
+        padding: 10px 2vw 10px 2vw;
+    }
+    .messages {
+        height: 140px;
+    }
+}
